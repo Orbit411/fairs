@@ -1,0 +1,150 @@
+.nav{
+  background-color: transparent;
+
+flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px ;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 30px var(--orange);
+}
+.nav .logo{
+
+  height: 75px;
+}
+.nav .logo img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav .left ul{
+  text-align: left;
+  margin-right: 100px;
+height: 100%;
+}
+.nav .left ul li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 25px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: .5s ease-in-out;
+  color: #fff;
+  height: 100%;
+}
+.nav .left ul li a{
+  color: #fff;
+  text-decoration: none;
+  
+  padding-bottom:5px ;
+}
+.nav .left ul li:hover{
+  background-color: var(--orange);
+  border-radius: 5px;
+  transition: .5s ease-in-out;
+}
+
+.nav .menu{
+  display: none;
+}
+
+@media (max-width:913px) {
+  .nav{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav .left ul{
+    margin: 0;
+  }
+}
+@media (max-width:560px) {
+  .nav{
+    flex-wrap: nowrap;
+  justify-content: space-between;
+    gap: 20px;
+  }
+  .nav .left {
+    display: none;
+  }
+  .nav .menu{
+    display: block;
+    margin-right: 25px;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+
+  }
+  .nav .logo{
+
+    height: 50px;
+  }
+}
+
+
+
+.nav .menulist{
+
+  position: fixed;
+inset: 0;
+background-color: rgba(40,40,48,0.91);
+padding-top: 2rem;
+z-index: 999;
+
+margin: 0 auto;
+}
+ul.model{
+  width: 80%;
+  margin: 0 auto;
+  background-color:var(--orange);
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+  box-shadow: 5px 5px 30px var(--gold);
+  animation: model .5s 1;
+}
+@keyframes model {
+  0% {scale: 0;}
+  60% {scale: 1.2;}
+  100% {scale: 1;}
+}
+.nav ul.model li {
+  color: var(--text);
+  border-bottom:2px solid #f4f4f4;
+  padding-bottom: .7rem;
+  padding-top: .5rem;
+  font-weight: 400;
+  text-align: left;
+  list-style: none;
+}
+.nav ul.model li a{
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--text);
+}
+.nav ul.model li:last-child{
+  border: none;
+}
+.nav ul.model li:first-child{
+  border: none;
+  display: flex;
+  justify-content: end;
+  
+  align-items: center;
+
+}
+.nav .icon-close{
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--subtitle);
+  text-align: right;
+
+  border: 1px solid var(--subtitle);
+  border-radius: 50%;
+  transition: .2s;
+}

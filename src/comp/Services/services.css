@@ -1,0 +1,85 @@
+.top-title {
+  margin: 0 auto;
+  font-size: 5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  color:#fff;
+  text-transform: uppercase;
+  animation: pulseEffect 3s infinite alternate ease-in-out;
+}
+
+/* تأثير الوميض (نبض متدرج) */
+@keyframes pulseEffect {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 140, 0, 0.4);
+    opacity: 0;
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 165, 0, 0.8), 0 0 30px rgba(255, 140, 0, 0.6);
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 140, 0, 0.4);
+    opacity: 0.5;
+  }
+}
+.top{
+  width: 100%;
+}
+
+.services{
+  width: 100%;
+  padding: 0 5%;
+  margin-bottom:50px ;
+}
+.services .all{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.services .all .serv{
+  display: flex;
+  width:450px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 5px 10px;
+  border-radius: 20px;
+  height: 150px;
+  transition: .3s ease-in-out;
+    box-shadow: 4px 4px 5px rgba(243, 185, 68, 0.6), -4px -4px 5px rgba(238, 179, 61, 0.6);
+}
+.services .all .serv h3{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.services .all .serv:hover{
+
+  transform: scale(1.1) skewY(5deg);
+  transition: .3s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(243, 185, 68, 0.6), -4px -4px 10px rgba(238, 179, 61, 0.6);
+}
+@media (max-width:1090px) {
+  .services .all .serv{
+    width: 400px;
+  }
+}
+@media (max-width:970px) {
+  .services .all .serv{
+  flex-direction: column;
+  }
+}
+
+@media (max-width:710px) {
+  .top-title{
+    font-size: 3.5rem;
+  }
+}
+@media (max-width:495px) {
+  .top-title{
+    font-size:2.8rem;
+  }
+}
