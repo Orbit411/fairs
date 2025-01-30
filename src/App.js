@@ -8,7 +8,7 @@ import Services from './comp/Services/services';
 
 function App() {
   return (
-<div className="container">
+<div className="container no">
   <Nav/>
   <Hero/>
   <Slider/>
