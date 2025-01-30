@@ -1,10 +1,13 @@
 .portfolio {
   width: 80%;
   margin-left: 10%;
+
+
 }
 .portfolio .shuffle {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .portfolio .shuffle li {
@@ -22,6 +25,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio .imgs-container .box {
@@ -77,4 +82,26 @@
 
 .portfolio .imgs-container .box .caption p {
   color: #19c8fa;
+}
+.load-more{
+  width: 300px;
+  height: 60px;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  background-color:rgba(24, 24, 27, 1) ;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  box-shadow: 4px 4px 8px rgba(243, 185, 68, 0.6), -4px -4px 8px rgba(238, 179, 61, 0.6);
+}
+.load-more:hover{
+  transition: .5s ease-in-out;
+  transform: scale(1.1);
+  background-color: var(--orange);
+  box-shadow: 4px 4px 10px #fff, -4px -4px 10px #fff;
 }
