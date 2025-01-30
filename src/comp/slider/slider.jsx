@@ -4,8 +4,13 @@ import p1 from "../pic/hero.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import Img1 from "../pic/p1.jpg";
+import Img2 from "../pic/p2.jpg";
+import Img3 from "../pic/p3.jpg";
+import Img4 from "../pic/p4.jpg";
+import Img5 from "../pic/p5.jpg";
 
-const images = [p1, p1, p1, p1, p1, p1];
+const images = [Img1 , Img2, Img3, Img4, Img5];
 
 const Slider = () => {
   return (
@@ -15,7 +20,7 @@ const Slider = () => {
         className="slider"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 3,delay:.5 }}
         style={{ margin: "10px auto 100px", width: "100%", maxWidth: "1500px" }}
       >
         <Swiper

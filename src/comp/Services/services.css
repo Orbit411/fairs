@@ -45,7 +45,8 @@
   width:450px;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--orange);
+  background: rgba(24, 24, 27, 1);
+  height: max-content;
   padding: 5px 10px;
   border-radius: 20px;
   height: 150px;
@@ -70,6 +71,7 @@
 @media (max-width:970px) {
   .services .all .serv{
   flex-direction: column;
+  height: max-content;
   }
 }
 

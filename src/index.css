@@ -143,3 +143,11 @@ a {
   margin: 30px auto;
   text-align: center;
 }
+ @media(max-width:500px){
+  .image-loader{
+  width: 350px;
+  }
+  .image-loader img{
+    max-width: 100%;
+  }
+ }

@@ -1,7 +1,7 @@
 import "./Hero.css";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
-import hero from "../pic/hero.jpg"
+import Img5 from "../pic/p5.jpg";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Hero = () => {
   return (
@@ -96,7 +96,7 @@ const Hero = () => {
               }}
               className="image-container"
             >
-              <img src={hero} alt="houses" />
+              <img src={Img5} alt="houses" />
             </motion.div>
           </div>
         </div>
